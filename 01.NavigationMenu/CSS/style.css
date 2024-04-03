@@ -110,3 +110,126 @@ a {
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
 }
+#toggle_nav:checked + label + ul{
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+#toggle_nav:checked + label span:first-child{
+  transform: rotate(127deg);
+  position: relative;
+  top: -4px;
+}   
+#toggle_nav:checked + label span.line_mid{
+  transform: translateX(10px);
+  opacity: 0;
+
+}
+#toggle_nav:checked + label span:last-child{
+  position: relative;
+  top: -15px;
+  transform: rotate(58deg);
+
+} 
+
+@media screen and (max-width:999px) {
+  .box-img-logo {
+      min-width: 36px;
+  }
+  .section-logo {
+      font-size: 0.9rem;
+  }
+  .center-nav ul li a{
+      font-size: 0.8rem;
+  }
+  .active {
+      padding: 6px;
+  }  
+  .group-icon a svg{
+      width: 13px;
+  } 
+  .status-connection {
+      width: 57px;
+      padding: 0.2rem;
+      font-size: 0.8rem;
+  }
+  .profile-user {
+      width: 40px;
+      height: 40px;
+  }
+  .section_nav {
+      grid-template-columns: 3% 42% 24%;
+  }   
+}
+
+@media screen and (min-width:814px) {
+  .nav_mobile{
+      display: none;
+  }
+}
+@media screen and (max-width:815px) {
+  .center-nav{
+      display: none;
+  }
+  .box-img-logo {
+      min-width: 27px;
+  }
+  .section-logo h3{
+      font-size: 0.8rem;
+  }
+  .group-icon a svg {
+      width: 10px;
+  }
+  .group-icon {
+      gap: 1.4rem;
+      margin-right: 1rem;
+  }
+  .status-connection {
+      width: 46px;
+      font-size: 1rem;
+  }
+  .section_nav {
+      padding: 1rem;
+  }
+  .list_nav_mobile{
+  position: fixed;
+  left: 0;
+  background-color: #fff;
+  height: 100%;
+  top: 0;
+  width: 200px;
+  transform: translateX(-350px);
+  transition: all 250ms ease-out;
+  -webkit-transition: all 250ms ease-out;
+  -moz-transition: all 250ms ease-out;
+  -ms-transition: all 250ms ease-out;
+  -o-transition: all 250ms ease-out;
+  padding: 2rem 0 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  text-align: left;
+  overflow-x: hidden;
+}
+.line{
+  border-bottom: 2px solid;
+  width: 14px;
+  display: block;
+  margin-bottom: 3px;
+  transition: all 260ms ease-out;
+  -webkit-transition: all 260ms ease-out;
+  -moz-transition: all 260ms ease-out;
+  -ms-transition: all 260ms ease-out;
+  -o-transition: all 260ms ease-out;
+}
+.section_nav {
+  grid-template-columns: 3% 89% 3%;
+}
+.label_toggle_nav{
+  position: relative;
+  top: 17px;
+}
+}
