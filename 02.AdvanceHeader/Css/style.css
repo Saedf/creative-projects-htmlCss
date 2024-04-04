@@ -13,6 +13,9 @@ a {
 li {
   list-style: none;
 }
+img{
+  width: 100%;
+}
 
 .header_container {
 }
@@ -28,9 +31,28 @@ li {
 }
 .section_nav nav {
   display: flex;
-  gap: 2rem;
+  gap: 1.3rem;
 }
-.logo_nav a{
+.section_nav nav li a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+.section_nav nav li:not(:last-child) a:hover {
+  color: #5c48ee;
+ }
+.section_nav nav li a.active {
+  background-color: #5c48ee;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+}
+.section_nav nav li a.active:hover{
+  background-color: #0f1e6a;
+}
+.logo_nav a {
   font-size: 1.5rem;
   font-weight: 500;
   color: #5c48ee;
