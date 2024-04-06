@@ -66,6 +66,7 @@ a{
 }
 .navigation_menu > li{
     padding: 18px 10px;
+    position: relative;
 }
 .navigation_menu > li::after {
  content: '';
@@ -93,4 +94,79 @@ a{
     color: #fff;
     font-weight: bold;
 }
+.arrow_icon::before{
+  content: '';
+  border-bottom: 2px solid #fff;
+  height: 7px;
+  display: block;
+  border-right: 2px solid #fff;
+  width: 7px;
+  position: absolute;
+  right:105%;
+  top: 43%;
+  transform: rotate(42deg);
+  transition: transform 250ms ease-in-out;
+  -webkit-transform: rotate(42deg);
+  -moz-transform: rotate(42deg);
+  -ms-transform: rotate(42deg);
+  -o-transform: rotate(42deg);
+  -webkit-transition: transform 250ms ease-in-out;
+  -moz-transition: transform 250ms ease-in-out;
+  -ms-transition: transform 250ms ease-in-out;
+  -o-transition: transform 250ms ease-in-out;
+}
+.arrow_icon:hover::before{
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+}
 
+.navigation_menu > li>ul.sub_menu{
+  top: 65px; 
+  right: -31px;
+}
+.sub_menu{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  min-width: 200px;
+  padding: 15px 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:   opacity 0.15s ease-in-out;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition:   opacity 0.15s ease-in-out;
+  -moz-transition:   opacity 0.15s ease-in-out;
+  -ms-transition:   opacity 0.15s ease-in-out;
+  -o-transition:   opacity 0.15s ease-in-out;
+}
+.sub_menu li a{
+  padding:  12px;
+  display: block;
+  transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+}
+.sub_menu li a:hover{
+  background-color: #eee; 
+ color: #000;
+}
+.controll:hover>.sub_menu{
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+}
+.left_menu{
+  right: 200px;
+  top: 61px;
+}
