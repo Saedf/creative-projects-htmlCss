@@ -1,5 +1,28 @@
-*{
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins';
+  background-color: #dde1e7;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+
+}
+.keyboard_section{
+    background-color: #dde1e7;
+    width: 1000px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #fffff773,2px 2px 5px rgba(94,104,121,0.3);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
