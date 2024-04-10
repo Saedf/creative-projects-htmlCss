@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Poppins';
   background-color: #dde1e7;
@@ -12,17 +14,87 @@ body {
   align-items: center;
   justify-content: center;
 }
-.container{
 
+.container {}
+
+.keyboard_section {
+  padding: 25px;
+  background-color: #dde1e7;
+  width: 1000px;
+  /* height: 300px; */
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #fffff773, 2px 2px 5px rgba(94, 104, 121, 0.3);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
-.keyboard_section{
-    background-color: #dde1e7;
-    width: 1000px;
-    height: 300px;
-    border-radius: 10px;
-    box-shadow: -3px -3px 7px #fffff773,2px 2px 5px rgba(94,104,121,0.3);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 18px 0;
+}
+
+.row input {
+  border: none;
+  background-color: #dde1e7;
+  box-shadow: -3px -3px 7px #fffff773, 2px 2px 5px rgba(94, 104, 121, 0.3);
+  height: 50px;
+  min-width: 50px;
+  font-size: 20px;
+  color: #808080;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.row input[value='SPACE'] {
+  width: 60%;
+}
+
+.row input:focus {
+  color: #3498db;
+  font-size: 19px;
+  box-shadow: inset -3px -3px 7px #fffff773, inset 2px 2px 5px rgba(94, 104, 121, 0.3);
+}
+
+@media screen and (max-width:800px) {
+  .keyboard_section {
+    width: 500px;
+  }
+
+  .row {
+    gap: 10px;
+  }
+
+  .row input {
+    height: 30px;
+    min-width: 30px;
+    font-size: 12px;
+  }
+
+  .row input:focus {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .keyboard_section {
+    width: 400px;
+    padding: 5px;
+  }
+
+  .row input {
+    height: 30px;
+    min-width: 30px;
+    font-size: 10px;
+
+  }
+  .row input:focus {
+    font-size: 9px;
+  }
 }
