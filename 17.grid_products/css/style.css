@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body{
+
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1300px;
+    margin: 5rem auto;
+}
+.grid_product{
+ width: 300px;
+ display: inline-block;
+}
+.item_grid_product{
+
+}
+.img_product
+{
+  margin-bottom: 2rem ;
+  text-align: center;
+}
+.caption_item_product{
+  text-align: center;
+  color: #000;
+}
+.text_product{
+ margin: 1rem 0;
+}
+.price_product{
+    margin: 1rem 0;
+}
+.add_to_card{
+
+}
