@@ -1,1 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e3f2fd;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+}
+.container {
+}
+.section_accordion {
+  background-color: #fff;
+  width: 580px;
+  /* height: 288px; */
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  padding: 0.9rem;
+
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.section_accordion .row_accordion:nth-child(1){
+    background-color: #fff7f0;
+    border: 1px solid #ffd6b3;
+}
+.section_accordion .row_accordion:nth-child(2){
+    background-color: #cceeff;
+    border: 1px solid #f0faff;
+}
+.section_accordion .row_accordion:nth-child(3){
+    background-color: #ffccd6;
+    border: 1px solid #fff0f3;
+}
+.section_accordion .row_accordion:nth-child(4){
+    background-color: #ccccff;
+    border: 1px solid #f0f0ff;
+}
+.row_accordion {
+ 
+  padding: 0  15px;
+  border-radius: 5px;
+  overflow: hidden;
+ 
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.content_accordion {
+  height: 0;
+  transition: all 250ms ease-out ;
+  font-size: 12px;
+  
+  -webkit-transition: all 250ms ease-out ;
+  -moz-transition: all 250ms ease-out ;
+  -ms-transition: all 250ms ease-out ;
+  -o-transition: all 250ms ease-out ;
+}
+
+.header_accordion {
+  min-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 3rem;
+  position: relative;
+}
+.header_accordion span:last-child::before , .header_accordion span:last-child::after {
+    content: '';
+    border: 1px solid #333;
+    height: 9px;
+    display: inline-block ;
+}
+.header_accordion span:last-child::before {
+  
+
+}
+.header_accordion span:last-child::after {
+    position: absolute;
+    top: 18px;
+    transform: rotate(89deg );
+    right: 0px;
+   
+    -webkit-transform: rotate(89deg );
+    -moz-transform: rotate(89deg );
+    -ms-transform: rotate(89deg );
+    -o-transform: rotate(89deg );
+}
+.header_accordion span:first-child {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+.section_accordion input:checked + label + p{
+    height: 80px;
+    padding-bottom: 10px;
+}
+
+.section_accordion input:checked + label span:last-child::before {
+    opacity: 0;
+}
