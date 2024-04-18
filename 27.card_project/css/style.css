@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Tanha;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Tanha-FD.woff2") format('woff2');
+}
+
+body{
+    font-family: Tanha;
+}
