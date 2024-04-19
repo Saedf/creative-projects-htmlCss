@@ -3,13 +3,124 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  --color_fff:#fff;
+}
 @font-face {
   font-family: Tanha;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   src: url("../fonts/Tanha-FD.woff2") format('woff2');
 }
 
 body{
     font-family: Tanha;
+    background-color: #151515;
+
+}
+ul{
+  list-style: none;
+}
+.section_price{
+  padding: 62px 0;
+ 
+}
+.container{
+  padding: 0 19px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header_title{
+
+}
+.content_price{
+  margin-top:50px;
+  display: grid;
+  grid-template-columns: repeat(3,30%);
+  justify-content: center;
+  gap: 20px;
+
+}
+.header_title h2{
+  color: var(--color_fff);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+    
+}
+.item_price{
+  border: 1px solid #464646 ;
+  /*width: 30%;
+  */text-align: center;
+  padding:37px 22px;
+  transform: skewY(-4deg);
+  transition: all  0.3s ease-in;
+  -webkit-transform: skewY(-4deg);
+  -moz-transform: skewY(-4deg);
+  -ms-transform: skewY(-4deg);
+  -o-transform: skewY(-4deg);
+  -webkit-transition: all  0.3s ease-in;
+  -moz-transition: all  0.3s ease-in;
+  -ms-transition: all  0.3s ease-in;
+  -o-transition: all  0.3s ease-in;
+}
+
+.item_price > h3{
+  color: var(--color_fff);
+  font-size: 28px;
+  
+}
+.price, ul, .item_price> h3,.content_price button{
+  transform: skewY(4deg);
+  -webkit-transform: skewY(4deg);
+  -moz-transform: skewY(4deg);
+  -ms-transform: skewY(4deg);
+  -o-transform: skewY(4deg);
+}
+.price h3{
+  color: #f36100;
+  font-size: 54px;
+  margin-bottom: 12px;
+}
+.price span{
+ 
+}
+.content_price ul{
+  margin: 38px 0 ;
+}
+.content_price ul li{
+  margin-bottom: 5px;
+}
+.content_price ul li, .price span{
+  color: #c4c4c4;
+  font-weight: 700;
+}
+.content_price button{
+  font-family: Tanha;
+  background-color: #333333;
+  color: #fff;
+  padding: 14px 24px ;
+  font-size: 14px;
+  font-weight: 300;
+  border: none;
+  width: 90%;
+  transition: all  0.3s ease-in;
+  -webkit-transition: all  0.3s ease-in;
+  -moz-transition: all  0.3s ease-in;
+  -ms-transition: all  0.3s ease-in;
+  -o-transition: all  0.3s ease-in;
+}
+.item_price:hover{
+  background-color: var(--color_fff);
+
+}
+.item_price:hover .title_price,.item_price:hover  ul li{
+  color: #000;
+
+}
+.item_price:hover .price span{
+  color: #444444;
+}
+.item_price:hover button{
+  background-color: #f36100;
 }
