@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Sora';
+}
+@font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/Sora-Bold.ttf');
+}
