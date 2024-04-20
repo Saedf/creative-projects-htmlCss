@@ -1,119 +1,271 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-  font-family: 'Sora';
+body {
+  font-family: "Sora";
+  overflow-x: hidden;
 }
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 @font-face {
-    font-family: 'Sora';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../font/Sora-Light.ttf') ;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/Sora-Light.ttf");
 }
-:root{
-    --color_005025:#005025;
+@font-face {
+  font-family: "Sora_bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/Sora-Bold.ttf");
 }
-.header_content{
-   background-color: var(--color_005025);
+:root {
+  --color_005025: #005025;
 }
-.navigation_header{
+.header_content {
+  background-color: var(--color_005025);
+  position: relative;
+  border-radius: 0 0 140px 140px;
+  margin-bottom: 6rem;
+  -webkit-border-radius: 0 0 140px 140px;
+  -moz-border-radius: 0 0 140px 140px;
+  -ms-border-radius: 0 0 140px 140px;
+  -o-border-radius: 0 0 140px 140px;
+}
+.navigation_header {
   display: flex;
   justify-content: space-around;
-  padding:1rem 0 ;
+  padding: 1rem 0;
   align-items: center;
-
 }
-.left_nav{
-
+.left_nav {
 }
-.logo{
+.logo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.logo> img{
-    width: 34px ;
-    position: relative;
-    top: -4px;
+.logo > img {
+  width: 34px;
+  position: relative;
+  top: -4px;
 }
-.logo > span{
-   
-    color: #fff;
-    font-weight: 600;
-    font-size: 24px;
+.logo > span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
 }
-.center_nav{
-  
+.center_nav {
 }
-.center_nav ul{
-    display: flex;
-    gap: 4em;
+.center_nav ul {
+  display: flex;
+  gap: 4em;
 }
-.center_nav ul li a.cative{
-    color: #fff;
-    font-weight:600;
-    font-size: 1rem ;
-    
-  
+.center_nav ul li a.cative {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
 }
-.center_nav ul li a.cative::after{
-    content: '';
-    border-bottom: 2px solid #fff;
-    width: 23px;
-    height: 2px;
-    display: block;
-    position: relative;
-    left: 15px;
-    top: 3px;
-   
+.center_nav ul li a.cative::after {
+  content: "";
+  border-bottom: 2px solid #fff;
+  width: 23px;
+  height: 2px;
+  display: block;
+  position: relative;
+  left: 15px;
+  top: 3px;
 }
-.center_nav ul li a{
-   color: rgba(255, 255, 255, 0.6);
-  
+.center_nav ul li a {
+  color: rgba(255, 255, 255, 0.6);
 }
-.right_nav{
+.right_nav {
+}
+.link_nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.link_nav a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.link_nav a.active {
+  background-color: #fff;
+  color: #000;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.content_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
 
-}
-.link_nav{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-
-}
-.link_nav a{
-    color: #fff;
-    font-weight:400;
-    font-size: 1rem ;
-}
-.link_nav a.active{
-    background-color: #fff ;
-    color: #000;
-    padding: 9px 12px ; 
-    border-radius: 8px;
-    font-weight: 700;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-}
-.content_header{
-    display: flex;
-}
-.content_img{}
-.content_text{
-
+  padding-bottom: 14rem;
 }
 .content_text {
+  width: 50%;
+  position: relative;
+  top: -57px;
+  margin: 0 auto;
+}
 
-    
+.content_text h1 {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 600;
+}
+.content_text p {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 2rem 0;
+  font-size: 18px;
+}
+.content_text a {
+  font-family: "Sora_bold";
+  background-color: #fff;
+  font-weight: 600;
+  padding: 12px 24px;
+  color: #000;
+  box-shadow: 10px 10px 48px #01381b;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.content_img {
+  max-width: 500px;
+}
+img {
+  width: 100%;
+}
+.bottom_header {
+  width: 600px;
+  position: absolute;
+  right:0;
+  bottom: -11px;
+}
+.book_now {
+  background-color: #fff;
+  max-width: 1170px;
+  width: 100%;
+  height: 138px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  bottom: -53px;
+  border-radius: 12px;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 60px rgba(0, 24, 11, 0.16);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.book_now form {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 2rem 1.5rem;
+}
+.input_form {
+  width: 88%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.group{
+  padding: 0 12px;
+  position: relative;
+}
+.group:not(:first-child) {
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.group label {
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.group input {
+  border: none;
+  width: 100%;
+  height: 40px;
+}
+.group input::placeholder {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+.btn_form button{
+    background-color: #7d261c;
+    color: #fff;
+    border: none;
+    padding: 16px 29px;
+    border-radius: 7px;
+    font-weight: 600;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.arrow_iocn::after{
+    content: '';
+    border-right: 2px solid;
+    border-bottom: 2px solid ;
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    top: 46px;
+    right: 46px;
+    transform: rotate(43deg );
+    -webkit-transform: rotate(43deg );
+    -moz-transform: rotate(43deg );
+    -ms-transform: rotate(43deg );
+    -o-transform: rotate(43deg );
+}
+@media screen and (max-width:999px) {
+    .content_header {
+        flex-direction: column-reverse;
+    }
+    .content_text{
+        width: 90%;
+        top: 0;
+        margin: 6rem 0;
+    }
+    .content_img {
+        max-width: 359px;
+    }
+    .book_now form {
+        flex-direction: column;
+    }
+    .input_form{
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    .arrow_iocn::after{
+        right: 26px;
+    }
 }
