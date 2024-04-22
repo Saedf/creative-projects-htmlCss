@@ -73,7 +73,7 @@ img {
     height: 15rem;
     width: 15rem;
     border-radius: 100%;
-    filter: blur(20px);
+    filter: blur(10px);
     position: absolute;
     z-index: -1;
 
